@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="720.0" prefWidth="1200.0" stylesheets="@css/stylehome.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biblioteca.gestionehome.HomeViewController">
+
+    <top>
+        <VBox alignment="TOP_CENTER">
+            
+            <!-- HEADER -->
+            <HBox alignment="CENTER_LEFT" prefHeight="70.0" styleClass="header-bar">
+                <children>
+                    <Label styleClass="titolo-principale" text="Gestione Biblioteca">
+                        <HBox.margin><Insets left="40.0" /></HBox.margin>
+                    </Label>
+                    <Label prefHeight="30.0" prefWidth="87.0" styleClass="titolo-secondario" text="Home" />
+                </children>
+            </HBox>
+         <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="1219.0" spacing="20.0">
+            <children>
+               <Label styleClass="nav-item-current" text="Home">
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+               </Label>
+               <Label fx:id="libriID" onMouseClicked="#clickLibri" styleClass="nav-item" text="Libri" />
+               <Label fx:id="utentiID" onMouseClicked="#clickUtenti" styleClass="nav-item" text="Utenti" />
+               <Label fx:id="prestitiID" onMouseClicked="#clickPrestiti" styleClass="nav-item" text="Prestiti" />
+            </children>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+         </HBox>
+
+        </VBox>
+    </top>
+
+    <bottom>
+        <VBox alignment="CENTER" prefHeight="40.0">
+            <children>
+                <Label styleClass="footer-label" text="2025 Biblioteca Universitaria - Gestione Home" />
+            </children>
+        </VBox>
+    </bottom>
+
+    <center>
+        <StackPane alignment="CENTER" stylesheets="@css/stylehome.css">
+            <ImageView fitHeight="450.0" fitWidth="600.0" opacity="0.7" pickOnBounds="true" preserveRatio="true" styleClass="logo-impact">
+                <effect><GaussianBlur radius="5.0" /></effect>
+                <image><Image url="@image/logo_unisa.png" /></image>
+            </ImageView>
+        </StackPane>
+    </center>
+
+</BorderPane>
