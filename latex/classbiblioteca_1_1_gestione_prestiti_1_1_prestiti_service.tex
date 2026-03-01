@@ -1,0 +1,106 @@
+\doxysection{biblioteca.\+Gestione\+Prestiti.\+Prestiti\+Service Class Reference}
+\hypertarget{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service}{}\label{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service}\index{biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_ac78ebf9f737a491fb38234c9612c03be}{Prestiti\+Service}} (\mbox{\hyperlink{classbiblioteca_1_1_gestione_libri_1_1_archivio_libri}{Archivio\+Libri}} archivio\+Libri, \mbox{\hyperlink{classbiblioteca_1_1_gestione_utenti_1_1_archivio_utenti}{Archivio\+Utenti}} archivio\+Utenti, \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_archivio_prestiti_attivi}{Archivio\+Prestiti\+Attivi}} archivio\+Prestiti\+Attivi, \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_archivio_cronologia_prestiti}{Archivio\+Cronologia\+Prestiti}} archivio\+Cronologia)
+\item 
+void \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a5bd27f736c4a2b277273d28882844204}{registra\+Prestito\+Attivo}} (\mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} p)
+\item 
+\mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_ae3e2abe2c25aff7bf6e86c3e50d93aca}{elimina\+Prestito\+Attivo}} (\mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} p)
+\item 
+\mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a8ef50851667342896525a090a25a891d}{cerca\+Prestito\+Attivo}} (\mbox{\hyperlink{classbiblioteca_1_1_gestione_utenti_1_1_utente}{Utente}} utente, \mbox{\hyperlink{classbiblioteca_1_1_gestione_libri_1_1_libro}{Libro}} libro)
+\item 
+List$<$ \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} $>$ \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a7107c70f6bcd14c5e9c7c32873dc2129}{visualizza\+Prestiti\+Attivi}} ()
+\item 
+void \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_ac273fa65df0b58399a439f3ff184a041}{registra\+Prestito\+Cronologia}} (\mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} p)
+\item 
+\mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_ad7687b4c647b3fcc8f58bde0cf4b009d}{elimina\+Prestito\+Cronologia}} (\mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} p)
+\item 
+List$<$ \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} $>$ \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a2ba4b89803110bcac5b434a0f3404e4d}{cerca\+Prestito\+Utente\+Cronologia\+Per\+Utente}} (\mbox{\hyperlink{classbiblioteca_1_1_gestione_utenti_1_1_utente}{Utente}} utente)
+\item 
+List$<$ \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} $>$ \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a42b4ac5c38e323094a49a5cc43c0abf2}{ricerca\+Prestito\+Libro\+Cronologia\+Per\+Libro}} (\mbox{\hyperlink{classbiblioteca_1_1_gestione_libri_1_1_libro}{Libro}} libro)
+\item 
+List$<$ \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} $>$ \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a61b0684c7a396b618f360681b6ddc81b}{visualizza\+Cronologia}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+vince 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_ac78ebf9f737a491fb38234c9612c03be}\index{biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}!PrestitiService@{PrestitiService}}
+\index{PrestitiService@{PrestitiService}!biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}}
+\doxysubsubsection{\texorpdfstring{PrestitiService()}{PrestitiService()}}
+{\footnotesize\ttfamily \label{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_ac78ebf9f737a491fb38234c9612c03be} 
+biblioteca.\+Gestione\+Prestiti.\+Prestiti\+Service.\+Prestiti\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbiblioteca_1_1_gestione_libri_1_1_archivio_libri}{Archivio\+Libri}}}]{archivio\+Libri}{, }\item[{\mbox{\hyperlink{classbiblioteca_1_1_gestione_utenti_1_1_archivio_utenti}{Archivio\+Utenti}}}]{archivio\+Utenti}{, }\item[{\mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_archivio_prestiti_attivi}{Archivio\+Prestiti\+Attivi}}}]{archivio\+Prestiti\+Attivi}{, }\item[{\mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_archivio_cronologia_prestiti}{Archivio\+Cronologia\+Prestiti}}}]{archivio\+Cronologia}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a8ef50851667342896525a090a25a891d}\index{biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}!cercaPrestitoAttivo@{cercaPrestitoAttivo}}
+\index{cercaPrestitoAttivo@{cercaPrestitoAttivo}!biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}}
+\doxysubsubsection{\texorpdfstring{cercaPrestitoAttivo()}{cercaPrestitoAttivo()}}
+{\footnotesize\ttfamily \label{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a8ef50851667342896525a090a25a891d} 
+\mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} biblioteca.\+Gestione\+Prestiti.\+Prestiti\+Service.\+cerca\+Prestito\+Attivo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbiblioteca_1_1_gestione_utenti_1_1_utente}{Utente}}}]{utente}{, }\item[{\mbox{\hyperlink{classbiblioteca_1_1_gestione_libri_1_1_libro}{Libro}}}]{libro}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a2ba4b89803110bcac5b434a0f3404e4d}\index{biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}!cercaPrestitoUtenteCronologiaPerUtente@{cercaPrestitoUtenteCronologiaPerUtente}}
+\index{cercaPrestitoUtenteCronologiaPerUtente@{cercaPrestitoUtenteCronologiaPerUtente}!biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}}
+\doxysubsubsection{\texorpdfstring{cercaPrestitoUtenteCronologiaPerUtente()}{cercaPrestitoUtenteCronologiaPerUtente()}}
+{\footnotesize\ttfamily \label{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a2ba4b89803110bcac5b434a0f3404e4d} 
+List$<$ \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} $>$ biblioteca.\+Gestione\+Prestiti.\+Prestiti\+Service.\+cerca\+Prestito\+Utente\+Cronologia\+Per\+Utente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbiblioteca_1_1_gestione_utenti_1_1_utente}{Utente}}}]{utente}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_ae3e2abe2c25aff7bf6e86c3e50d93aca}\index{biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}!eliminaPrestitoAttivo@{eliminaPrestitoAttivo}}
+\index{eliminaPrestitoAttivo@{eliminaPrestitoAttivo}!biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}}
+\doxysubsubsection{\texorpdfstring{eliminaPrestitoAttivo()}{eliminaPrestitoAttivo()}}
+{\footnotesize\ttfamily \label{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_ae3e2abe2c25aff7bf6e86c3e50d93aca} 
+\mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} biblioteca.\+Gestione\+Prestiti.\+Prestiti\+Service.\+elimina\+Prestito\+Attivo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}}}]{p}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_ad7687b4c647b3fcc8f58bde0cf4b009d}\index{biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}!eliminaPrestitoCronologia@{eliminaPrestitoCronologia}}
+\index{eliminaPrestitoCronologia@{eliminaPrestitoCronologia}!biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}}
+\doxysubsubsection{\texorpdfstring{eliminaPrestitoCronologia()}{eliminaPrestitoCronologia()}}
+{\footnotesize\ttfamily \label{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_ad7687b4c647b3fcc8f58bde0cf4b009d} 
+\mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} biblioteca.\+Gestione\+Prestiti.\+Prestiti\+Service.\+elimina\+Prestito\+Cronologia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}}}]{p}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a5bd27f736c4a2b277273d28882844204}\index{biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}!registraPrestitoAttivo@{registraPrestitoAttivo}}
+\index{registraPrestitoAttivo@{registraPrestitoAttivo}!biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}}
+\doxysubsubsection{\texorpdfstring{registraPrestitoAttivo()}{registraPrestitoAttivo()}}
+{\footnotesize\ttfamily \label{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a5bd27f736c4a2b277273d28882844204} 
+void biblioteca.\+Gestione\+Prestiti.\+Prestiti\+Service.\+registra\+Prestito\+Attivo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}}}]{p}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_ac273fa65df0b58399a439f3ff184a041}\index{biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}!registraPrestitoCronologia@{registraPrestitoCronologia}}
+\index{registraPrestitoCronologia@{registraPrestitoCronologia}!biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}}
+\doxysubsubsection{\texorpdfstring{registraPrestitoCronologia()}{registraPrestitoCronologia()}}
+{\footnotesize\ttfamily \label{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_ac273fa65df0b58399a439f3ff184a041} 
+void biblioteca.\+Gestione\+Prestiti.\+Prestiti\+Service.\+registra\+Prestito\+Cronologia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}}}]{p}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a42b4ac5c38e323094a49a5cc43c0abf2}\index{biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}!ricercaPrestitoLibroCronologiaPerLibro@{ricercaPrestitoLibroCronologiaPerLibro}}
+\index{ricercaPrestitoLibroCronologiaPerLibro@{ricercaPrestitoLibroCronologiaPerLibro}!biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}}
+\doxysubsubsection{\texorpdfstring{ricercaPrestitoLibroCronologiaPerLibro()}{ricercaPrestitoLibroCronologiaPerLibro()}}
+{\footnotesize\ttfamily \label{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a42b4ac5c38e323094a49a5cc43c0abf2} 
+List$<$ \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} $>$ biblioteca.\+Gestione\+Prestiti.\+Prestiti\+Service.\+ricerca\+Prestito\+Libro\+Cronologia\+Per\+Libro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbiblioteca_1_1_gestione_libri_1_1_libro}{Libro}}}]{libro}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a61b0684c7a396b618f360681b6ddc81b}\index{biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}!visualizzaCronologia@{visualizzaCronologia}}
+\index{visualizzaCronologia@{visualizzaCronologia}!biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}}
+\doxysubsubsection{\texorpdfstring{visualizzaCronologia()}{visualizzaCronologia()}}
+{\footnotesize\ttfamily \label{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a61b0684c7a396b618f360681b6ddc81b} 
+List$<$ \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} $>$ biblioteca.\+Gestione\+Prestiti.\+Prestiti\+Service.\+visualizza\+Cronologia (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a7107c70f6bcd14c5e9c7c32873dc2129}\index{biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}!visualizzaPrestitiAttivi@{visualizzaPrestitiAttivi}}
+\index{visualizzaPrestitiAttivi@{visualizzaPrestitiAttivi}!biblioteca.GestionePrestiti.PrestitiService@{biblioteca.GestionePrestiti.PrestitiService}}
+\doxysubsubsection{\texorpdfstring{visualizzaPrestitiAttivi()}{visualizzaPrestitiAttivi()}}
+{\footnotesize\ttfamily \label{classbiblioteca_1_1_gestione_prestiti_1_1_prestiti_service_a7107c70f6bcd14c5e9c7c32873dc2129} 
+List$<$ \mbox{\hyperlink{classbiblioteca_1_1_gestione_prestiti_1_1_prestito}{Prestito}} $>$ biblioteca.\+Gestione\+Prestiti.\+Prestiti\+Service.\+visualizza\+Prestiti\+Attivi (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+gestionebiblioteca/src/main/java/biblioteca/\+Gestione\+Prestiti/\mbox{\hyperlink{_prestiti_service_8java}{Prestiti\+Service.\+java}}\end{DoxyCompactItemize}
